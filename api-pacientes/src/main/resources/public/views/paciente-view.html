@@ -1,0 +1,27 @@
+<div class="container pad-top">
+  <table class="table pacientetable">
+      <tr>
+          <td><h3>Detalhes do paciente {{paciente.nome}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Nome</td>
+          <td>{{paciente.nome}}</td>
+      </tr>
+      <tr>
+          <td>Sobrenome</td>
+          <td>{{paciente.sobrenome}}</td>
+      </tr>
+      <tr>
+          <td>CPF</td>
+          <td>{{paciente.cpf}}</td>
+      </tr>
+      <tr>
+          <td>RG</td>
+          <td>{{paciente.rg}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editPaciente({id:paciente.id})">Edit</a>
+  </div>
+</div>

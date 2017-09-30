@@ -1,0 +1,19 @@
+<div class="container pad-top">
+  <a ui-sref="newPaciente" class="btn-primary btn-lg nodecoration">Novo paciente</a>
+  <table class="table pacientetable">
+      <tr>
+          <td><h3>Todos pacientes</h3></td>
+          <td></td>
+      </tr>
+      <tr ng-repeat="paciente in pacientes">
+          <td>{{paciente.nome}}</td>
+          <td>{{paciente.sobrenome}}</td>
+          <td>{{paciente.cpf}}</td>
+          <td>{{paciente.rg}}</td>
+          <td>
+              <a class="btn btn-primary" ui-sref="viewPaciente({id:paciente.id})">View</a>
+              <a class="btn btn-danger"  ng-click="deletePaciente(paciente)">Delete</a>
+          </td>
+      </tr>
+  </table>
+</div>
